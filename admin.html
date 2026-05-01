@@ -1,0 +1,9 @@
+<!doctype html><html lang='es'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Admin | Fixy Hub Marketing</title><link rel='stylesheet' href='css/styles.css'><link rel='stylesheet' href='css/admin.css'></head><body>
+<header><img src='assets/logo-fixy.svg'><h1>Panel Admin</h1><nav><a href='index.html'>Dashboard</a><button data-logout>Salir</button></nav></header>
+<section class='card'><h2>Gestión de usuarios</h2><form id='createUser'><input name='email' placeholder='email'><select name='role'><option>viewer</option><option>editor</option><option>admin</option></select><button>Crear</button></form><ul id='users'></ul></section>
+<section class='card'><h2>Reportes cargados (Meta)</h2><input type='file' id='metaFile' multiple><button id='clearMeta'>Limpiar todos</button><ul id='metaList'></ul><p id='metaSummary'></p></section>
+<section class='card'><h2>Reportes Kommo</h2><input type='file' id='kommoFile' multiple><button id='clearKommo'>Limpiar todos</button><ul id='kommoList'></ul></section>
+<section class='card'><h2>Configuración de filtros</h2><textarea id='filters' rows='12'></textarea><button id='saveFilters'>Guardar filtros</button></section>
+<section class='card'><h2>Redes sociales</h2><textarea id='socialCfg' rows='10'></textarea><button id='saveSocial'>Guardar previews</button></section>
+<section class='card'><h2>Muro interno</h2><ul id='wallAdmin'></ul></section>
+<script type='module'>import {bootstrapAuth} from './js/app.js';import {initAdmin} from './js/admin.js'; bootstrapAuth(); initAdmin();</script></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang='es'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Fixy Hub Marketing</title><link rel='stylesheet' href='css/styles.css'><link rel='stylesheet' href='css/dashboard.css'></head><body>
+<header><img src='assets/logo-fixy.svg' alt='Fixy'><h1>Fixy Hub Marketing</h1><nav><a href='admin.html'>Admin</a><a href='chat.html'>Flux</a><button data-logout>Salir</button></nav></header>
+<section class='card'><form id='loginForm'><input id='email' placeholder='tu.email@fixy.com.ar'><button>Ingresar</button></form><p id='loginMessage'></p><p id='userInfo'></p></section>
+<section class='card'><h2>Esto es lo que está moviendo Marketing esta semana.</h2><p id='executive'></p></section><section id='kpis' class='grid'></section>
+<section class='card'><h3>Muro interno</h3><div id='wallContainer'></div></section>
+<section class='card'><h3>Redes sociales</h3><div id='social' class='grid'></div></section>
+<script type='module'>import {bootstrapAuth} from './js/app.js'; import {initDashboard} from './js/dashboard.js'; bootstrapAuth(); initDashboard();</script>
+</body></html>

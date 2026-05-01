@@ -1,0 +1,4 @@
+<!doctype html><html lang='es'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Flux Chat</title><link rel='stylesheet' href='css/styles.css'><link rel='stylesheet' href='css/chat.css'></head><body>
+<header><img src='assets/logo-fixy.svg'><h1>Flux Chat</h1><nav><a href='index.html'>Dashboard</a><button data-logout>Salir</button></nav></header>
+<section class='card'><div id='chatOut'></div><form id='chatForm'><input id='chatIn' placeholder='Preguntá algo...'><button>Enviar</button></form></section>
+<script type='module'>import {bootstrapAuth} from './js/app.js'; import {initChat} from './js/chat.js'; bootstrapAuth(); initChat();</script></body></html>
